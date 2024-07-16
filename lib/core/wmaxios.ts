@@ -23,9 +23,9 @@ const patch = async (path: string, data: any) => {
   return await sendMessage(path, "PATCH", data);
 };
 
-// const delete = async (path: string) => {
-//   return await sendMessage(path, "DELETE");
-// };
+const _delete = async (path: string) => {
+  return await sendMessage(path, "DELETE");
+};
 
 const sendMessage = async (
   path: string,
@@ -75,4 +75,4 @@ const timeoutPromise = (timeout: number): Promise<any> => {
   });
 };
 
-export const wmaxios = { get, post, put, patch };
+export const wmaxios = { get, post, put, patch, delete: _delete };
