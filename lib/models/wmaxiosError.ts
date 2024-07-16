@@ -1,6 +1,6 @@
 import { StatusCode } from "./statusCode";
 
-export interface BxiosError {
+export interface WMaxiosError {
   message: string;
   status: StatusCode;
 }

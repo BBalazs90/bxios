@@ -1,6 +1,6 @@
 import { Method } from "./method";
 
-export interface BxiosRequest {
+export interface WMaxiosRequest {
   requestId: string;
   method: Method;
   path: string;
