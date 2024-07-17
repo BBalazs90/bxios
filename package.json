@@ -1,6 +1,6 @@
 {
   "name": "wmaxios",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "An axios like client, but instead of sending HTTP requests, it sends webmessages. Intended use: communication between WebView2 hosted UI and its \"backend\".",
   "main": "index.ts",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BBalazs90/bxios.git"
+    "url": "git+https://github.com/BBalazs90/wmaxios.git"
   },
   "keywords": [
     "webview2"
@@ -17,9 +17,9 @@
   "author": "Egon Róbert Szabó",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/BBalazs90/bxios/issues"
+    "url": "https://github.com/BBalazs90/wmaxios/issues"
   },
-  "homepage": "https://github.com/BBalazs90/bxios#readme",
+  "homepage": "https://github.com/BBalazs90/wmaxios#readme",
   "devDependencies": {
     "ts-node": "^10.9.2",
     "typescript": "^5.5.3"
