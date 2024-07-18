@@ -5,6 +5,20 @@ import { v4 as uuidv4 } from "uuid";
 import { Method } from "../models/method";
 import { StatusCode } from "../models/statusCode";
 
+declare global {
+  interface Window {
+  chrome: {
+    webview: {
+      postMessage: (message: any) => void;
+      addEventListener: (
+        event: string,
+        listener: (event: MessageEvent) => void
+      ) => void;
+    };
+  };
+}
+}
+
 let REQUEST_TIMEOUT = 20000;
 
 const get = async (path: string): Promise<WMaxiosResponse> => {
